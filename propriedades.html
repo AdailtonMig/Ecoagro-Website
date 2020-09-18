@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="/css/Style-propriedades.css">
+    <link rel="shortcut icon" href="/imgs/fav.png">
+
+    <!-- Versão development jQuery -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <title>Propriedades</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"> Ecoagro </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign in</a></li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cadastre sua propriedade!</h1>
+    </div>
+
+    <!-- form -->
+
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  id="propriedade" type="text" class="validate">
+                  <label for="propriedade">Nome da propriedade</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s6">
+                  <input  id="first_name" type="text" class="validate">
+                  <label for="first_name">Estado</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <select class="validate">
+                    <option value="" disabled selected>Município</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label>Escolha seu município</label>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  id="endereco" type="text" class="validate">
+                  <label for="endereco">Endereço</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s9">
+                  <input  id="cultivo" type="text" class="validate">
+                  <label for="cultivo">Tamanho da área de cultivo</label>
+                </div>
+
+                <div class="input-field col s3">
+                  <select class="validate">
+                    <option value="1">km²</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label>Medida</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  id="solo" type="text" class="validate">
+                  <label for="solo">Tipo de solo</label>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  id="qtd-tensio" type="text" class="validate">
+                  <label for="qtd-tensio">Quantos tensiômetros há na propriedade?</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  id="esp-tensio" type="text" class="validate">
+                  <label for="esp-tensio">Qual é o espaço médio entre os tensiômetros?</label>
+                </div>
+              </div>
+
+            </form>
+
+            <button class="btn waves-effect waves-light right" type="submit" name="action">Cadastrar
+                <i class="material-icons right">send</i>
+            </button>
+          </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Projeto Ecoagro</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Clube de ciências Sírius
+          <a class="grey-text text-lighten-4 right" href="#!">Reportar erro!</a>
+          </div>
+        </div>
+      </footer>
+
+  
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $('select').formSelect();
+      });
+    </script>
+
+    <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+</body>
+</html>
