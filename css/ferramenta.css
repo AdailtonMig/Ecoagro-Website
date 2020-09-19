@@ -1,0 +1,30 @@
+.field{
+    border-radius: 10px !important;
+    background-image: linear-gradient(to right, rgb(175, 175, 175), white, rgba(175, 175, 175));
+    padding-top: 0px;
+}
+
+label{
+    color: rgb(0, 0, 0) !important;
+}
+
+option{
+    color: black !important;
+}
+
+.tabzadas{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.tabs{
+    background-image: linear-gradient(to right, rgb(197, 195, 195), rgb(241, 241, 241), white, rgb(241, 241, 241), rgba(197, 195, 195)) !important;
+}
+
+.tab1{
+    color: black !important;
+}
+
+.btn{
+    background-color: rgb(12, 71, 25) !important;
+}

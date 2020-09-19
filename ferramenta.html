@@ -1,166 +1,584 @@
 <!DOCTYPE html>
 
-<html lang="pt-br">
-
+<html>
     <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="/css/geral.css">
+        <link rel="stylesheet" href="/css/ferramenta.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" href="/css/index.css">
-        <link rel="shortcut icon" href="/imgs/fav.png">
-
-        <!-- Versão development jQuery -->
         <script type="text/javascript" src="/js/jquery.js"></script>
-        <title>Ferramenta</title>
+        <title>Document</title>
     </head>
 
     <body>
+
         <header>
             <nav>
-                <div class="nav-wrapper navbar conteudo col s12">
+                <div class="nav-wrapper">
                     <div class="container">
-                        <a href="#" class="brand-logo"> Ecoagro </a>
+                        <a href="/" class="brand-logo">Logo</a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Sobre</a></li>
-                          <li><a href="#">Login</a></li>
-                          <li><a href="#">Sign in</a></li>
-                        </ul>
+                            <li><a href="sass.html">Sass</a></li>
+                            <li><a href="badges.html">Components</a></li>
+                            <li><a href="collapsible.html">JavaScript</a></li>
+                        </ul>    
                     </div>
                 </div>
             </nav>
         </header>
-        
-        <div class="conteudo">
-          <div class=" conteudo container">
-            <div class="container">
-              <h1>
+
+        <div class="container">
+            <h1>
                 Análise do solo
-              </h1>
-            </div>
-          </div>
-  
-          <div class="container">
-            <div class="row ">
-              <form class="col s12">
-              
-                <div class="container">
-                  <div class="row">
-                    <div class="col s8">
-                      Informe o potêncial mátrico do tensiômetro 1:
-                      <div class="input-field inline">
-                        <input id="tensio1" type="number" class="validate">
-                        <label for="tensio1"> <div class="container"></div> </label>
-                      </div>
-                    </div>
-
-                    <div class="input-field col s4">
-                      <br>
-                      <br>
-                      <select class="validate">
-                        <option value="" selected> Kpascal </option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                      <label>Escolha a medida</label>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col s8">
-                      Informe o potêncial mátrico do tensiômetro 2:
-                      <div class="input-field inline">
-                        <input id="tensio2" type="number" class="validate">
-                        <label for="tensio2"> <div class="container">*obrigatório*</div> </label>
-                      </div>
-                    </div>
-
-                    <div class="input-field col s4">
-                      <br>
-                      <br>
-                      <select class="validate">
-                        <option value="" selected> Kpascal </option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                      <label>Escolha a medida</label>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col s8">
-                      Informe o potêncial mátrico do tensiômetro 3:
-                      <div class="input-field inline">
-                        <input id="tensio3" type="number" class="validate">
-                        <label for="tensio3"> <div class="container">*obrigatório*</div> </label>
-                      </div>
-                    </div>
-
-                    <div class="input-field col s4">
-                      <br>
-                      <select class="validate">
-                        <option value="" selected> Kpascal </option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                      <label>Escolha a medida</label>
-                    </div>
-
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col s12">
-                      Informe o potêncial mátrico do tensiômetro 4:
-                      <div class="input-field inline">
-                        <input id="tensio4" type="number" class="validate">
-                        <label for="tensio4"> <div class="container"> Em Kpascal</div> </label>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col s12">
-                      Informe o potêncial mátrico do tensiômetro 5:
-                      <div class="input-field inline">
-                        <input id="tensio5" type="number" class="validate">
-                        <label for="tensio5"> <div class="container"> Em Kpascal</div> </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-              </form>
-
-              <div class="container">
-                <button class="btn waves-effect waves-light right" type="submit" name="action">Análisar
-                  <i class="material-icons right">send</i>
-                </button>
-              </div>
-
-            </div>
-          </div>
+            </h1>
         </div>
 
-        <br>
-        <br> 
-              
 
+        <div class="row">
+
+            <!-- Tabs começam aqui-->
+            
+            <div class="container">
+                <form class="col s12">
+                    <fieldset class="field col s12">
+
+                        <div class="row">
+                            <div class="tabzadas">
+                            <ul class="tabs">
+                                <li class="tab col s3"><a href="#test1" class="active tab1">Profundidade 1</a></li>
+                                <li class="tab col s3"><a class="tab1" href="#test2">Profundidade 2</a></li>
+                                <li class="tab col s3"><a href="#test3" class="tab1">Profundidade 3</a></li>
+                                <li class="tab col s3"><a href="#test4" class="tab1">Profundidade 4</a></li>
+                            </ul>
+                            </div>
+
+                            <!--Tab 1-->
+
+                            <div id="test1" class="col s12">
+                                <br>
+                                <div class="container">
+                                    
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t1" type="number" class="validate">
+                                            <label for="t1">Tensiômetro 1:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t2" type="number" class="validate">
+                                            <label for="t2">Tensiômetro 2:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t3" type="number" class="validate">
+                                            <label for="t3">Tensiômetro 3:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t4" type="number" class="validate">
+                                            <label for="t4">Tensiômetro 4:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <button class="btn waves-effect waves-light right" type="submit" name="action">Cadastrar
+                                        <i class="material-icons right">send</i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            
+
+                            <!--Tab 2-->
+
+                            <div id="test2" class="col s12">
+                                <br>
+                                <div class="container">
+                                
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t1" type="number" class="validate">
+                                            <label for="t1">Tensiômetro 1:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t2" type="number" class="validate">
+                                            <label for="t2">Tensiômetro 2:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t3" type="number" class="validate">
+                                            <label for="t3">Tensiômetro 3:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t4" type="number" class="validate">
+                                            <label for="t4">Tensiômetro 4:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t5" type="number" class="validate">
+                                            <label for="t5">Tensiômetro 5:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t6" type="number" class="validate">
+                                            <label for="t6">Tensiômetro 6:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!--Tab 3-->
+
+                            <div id="test3" class="col s12">
+                                <br>
+                                <div class="container">
+                                
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t1" type="number" class="validate">
+                                            <label for="t1">Tensiômetro 1:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t2" type="number" class="validate">
+                                            <label for="t2">Tensiômetro 2:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t3" type="number" class="validate">
+                                            <label for="t3">Tensiômetro 3:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t4" type="number" class="validate">
+                                            <label for="t4">Tensiômetro 4:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t5" type="number" class="validate">
+                                            <label for="t5">Tensiômetro 5:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t6" type="number" class="validate">
+                                            <label for="t6">Tensiômetro 6:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            <!--Tab 4-->
+
+                            <div id="test4" class="col s12">
+                                <br>
+                                <div class="container">
+                                
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t1" type="number" class="validate">
+                                            <label for="t1">Tensiômetro 1:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t2" type="number" class="validate">
+                                            <label for="t2">Tensiômetro 2:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t3" type="number" class="validate">
+                                            <label for="t3">Tensiômetro 3:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t4" type="number" class="validate">
+                                            <label for="t4">Tensiômetro 4:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t5" type="number" class="validate">
+                                            <label for="t5">Tensiômetro 5:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s9">
+                                            <input  id="t6" type="number" class="validate">
+                                            <label for="t6">Tensiômetro 6:</label>
+                                        </div>
+                                        
+                                        <div class="input-field col s3">
+            
+                                            <select class="validate">
+                                            <option value="1" selected>Km²</option>
+                                            <option value="2">M²</option>
+                                            <option value="3">Mi²</option>
+                                            </select>
+            
+                                            <label>Medida</label>
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!--Fim das tabs-->
+
+        </div>
+    
         <footer class="page-footer">
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
-                  <h5 class="white-text">Projeto Ecoagro</h5>
-                  <p class="grey-text text-lighten-4">Cliquem no link aqui do lado...</p>
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                   <h5 class="white-text">Links</h5>
                   <ul>
-                    <li><a class="grey-text text-lighten-3" href="/propriedades.html">outra page</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
@@ -170,18 +588,23 @@
             </div>
             <div class="footer-copyright">
               <div class="container">
-              © 2020 Clube de ciências Sírius
-              <a class="grey-text text-lighten-4 right" href="#!">Reportar erro!</a>
+              © 2014 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
               </div>
             </div>
-          </footer>
-    
+        </footer>
+
         <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
 
         <script type="text/javascript">
-          $(document).ready(function(){
-          $('select').formSelect();
-          });
+            $(document).ready(function(){
+            $('select').formSelect();
+            });
+
+            $(document).ready(function(){
+            $('.tabs').tabs();
+            });
+
         </script>
 
     </body>
